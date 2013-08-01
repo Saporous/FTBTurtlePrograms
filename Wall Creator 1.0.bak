@@ -11,7 +11,7 @@ turtle.select(currentSlot)
 
 ----------------------------------------------------------------------------
 function selection()
-  for pos = outlineBlock + 1, maxSlot do
+  for pos = outlineBlock + 1, pos <= maxSlot do
 		turtle.select(pos)
 		if turtle.getItemCount(pos) > 0 then
 			currentSlot = pos
