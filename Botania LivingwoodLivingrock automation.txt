@@ -1,0 +1,42 @@
+xPos = 1
+yPos = 1
+
+-- Go to Input Chest
+turtle.forward()
+turtle.forward()
+turtle.turnLeft()
+turtle.forward()
+turtle.turnLeft()
+
+if turtle.suckDown(8) == false then
+	exit()
+end
+
+turtle.forward()
+turtle.placeDown()
+turtle.forward()
+turtle.placeDown()
+turtle.forward()
+turtle.placeDown()
+
+turtle.turnLeft()
+turtle.forward()
+turtle.placeDown()
+turtle.forward()
+turtle.placeDown()
+turtle.forward()
+turtle.placeDown()
+
+turtle.turnLeft()
+turtle.forward()
+turtle.placeDown()
+turtle.forward()
+turtle.placeDown()
+turtle.forward()
+turtle.placeDown()
+
+turtle.turnLeft()
+turtle.forward()
+turtle.placeDown()
+
+exit()
