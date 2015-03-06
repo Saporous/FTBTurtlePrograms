@@ -1,42 +1,91 @@
 xPos = 1
 yPos = 1
 
--- Go to Input Chest
-turtle.forward()
-turtle.forward()
-turtle.turnLeft()
-turtle.forward()
-turtle.turnLeft()
 
-if turtle.suckDown(8) == false then
-	exit()
+while true do
+	-- Go to Input Chest
+	turtle.forward()
+	turtle.forward()
+	turtle.turnLeft()
+	turtle.forward()
+	turtle.turnLeft()
+
+	if turtle.suckDown(8) == false then
+		exit()
+	end
+
+	placeHarvest()
+
+	-- deposit items
+	if turtle.dropDown(8) == false then
+		exit()
+	end
+
+	-- return to starting position
+	turtle.forward()
+	turtle.forward()
+	turtle.turnRight()
+	turtle.forward()
+	turtle.turnRight()
 end
 
-turtle.forward()
-turtle.placeDown()
-turtle.forward()
-turtle.placeDown()
-turtle.forward()
-turtle.placeDown()
+-- Start from Input Chest, facing South
+-- End at Output Chest, facing South
+function placeHarvest()
+	turtle.forward()
+	turtle.placeDown()
+	turtle.forward()
+	turtle.placeDown()
+	turtle.forward()
+	turtle.placeDown()
 
-turtle.turnLeft()
-turtle.forward()
-turtle.placeDown()
-turtle.forward()
-turtle.placeDown()
-turtle.forward()
-turtle.placeDown()
+	turtle.turnLeft()
+	turtle.forward()
+	turtle.placeDown()
+	turtle.forward()
+	turtle.placeDown()
 
-turtle.turnLeft()
-turtle.forward()
-turtle.placeDown()
-turtle.forward()
-turtle.placeDown()
-turtle.forward()
-turtle.placeDown()
 
-turtle.turnLeft()
-turtle.forward()
-turtle.placeDown()
+	turtle.turnLeft()
+	turtle.forward()
+	turtle.placeDown()
+	turtle.forward()
+	turtle.placeDown()
 
-exit()
+	turtle.turnLeft()
+	turtle.forward()
+	turtle.placeDown()
+
+	sleep(75)
+
+	turtle.forward()
+	turtle.turnLeft()
+	turtle.digDown()
+	turtle.forward()
+	turtle.digDown()
+	turtle.forward()
+	turtle.digDown()
+
+	turtle.turnLeft()
+	turtle.forward()
+	turtle.digDown()
+	turtle.forward()
+	turtle.digDown()
+
+	turtle.turnLeft()
+	turtle.forward()
+	turtle.digDown()
+	turtle.forward()
+	turtle.digDown()
+
+	turtle.turnLeft()
+	turtle.forward()
+	turtle.digDown()
+
+	-- go to output chest
+	turtle.turnRight()
+	turtle.forward()
+	turtle.turnRight()
+	turtle.forward()
+	turtle.turnRight()
+end

@@ -8,22 +8,22 @@ Various programs for automating ComputerCraft turtles in Modded Minecraft
 3) 	Wall Creator 1.0
 4) 	Botania Livingwood/Livingrock Automation
 
-=========================== AREA FILLER 1.0 ===========================
+======== AREA FILLER 1.0 ========
 Description: 
 
 Usage:
 
-=========================== AREA FILLER 2.0 ===========================
+======== AREA FILLER 2.0 ========
 Description:
 
 Usage:
 
-=========================== Wall Creator 1.0 ==========================
+======== Wall Creator 1.0 ========
 Description:
 
 Usage:
 
-========================== Botania Livingwood/Livingrock Automation ==========================
+======== Botania Livingwood/Livingrock Automation ========
 Description:
 Automates placing and collection of livingwood and livingrock.
 
@@ -31,12 +31,12 @@ Area requirements:
 3x4x2
 Top is North
 / - Empty
-1 - Input Chest
-2 - Output Chest
+I - Input Chest
+O - Output Chest
 M - Material
 D - Daisy
 
-1 / 2
+I / O
 M M M
 M D M
 M M M
