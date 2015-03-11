@@ -1,30 +1,3 @@
-
-	-- Go to Input Chest
-	turtle.forward()
-	turtle.forward()
-	turtle.turnLeft()
-	turtle.forward()
-	turtle.turnLeft()
-
-	if turtle.suckDown(8) == false then
-		exit()
-	end
-
-	placeHarvest()
-
-	-- deposit items
-	if turtle.dropDown(8) == false then
-		exit()
-	end
-
-	-- return to starting position
-	turtle.forward()
-	turtle.forward()
-	turtle.turnRight()
-	turtle.forward()
-	turtle.turnRight()
-
-
 -- Start from Input Chest, facing South
 -- End at Output Chest, facing South
 function placeHarvest()
@@ -85,3 +58,30 @@ function placeHarvest()
 	turtle.forward()
 	turtle.turnRight()
 end
+
+
+-- Go to Input Chest
+turtle.forward()
+turtle.forward()
+turtle.turnLeft()
+turtle.forward()
+turtle.turnLeft()
+
+if turtle.suckDown(8) == false then
+	exit()
+end
+
+placeHarvest()
+
+-- deposit items
+if turtle.dropDown(8) == false then
+	exit()
+end
+
+-- return to starting position
+turtle.forward()
+turtle.forward()
+turtle.turnRight()
+turtle.forward()
+turtle.turnRight()
+
