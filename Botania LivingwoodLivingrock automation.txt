@@ -1,8 +1,4 @@
-xPos = 1
-yPos = 1
 
-
-while true do
 	-- Go to Input Chest
 	turtle.forward()
 	turtle.forward()
@@ -27,7 +23,7 @@ while true do
 	turtle.turnRight()
 	turtle.forward()
 	turtle.turnRight()
-end
+
 
 -- Start from Input Chest, facing South
 -- End at Output Chest, facing South
