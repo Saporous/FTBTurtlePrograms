@@ -1,5 +1,28 @@
--- Start from Input Chest, facing South
--- End at Output Chest, facing South
+--[[
+======== Botania Livingwood/Livingrock Automation ========
+Description:
+Automates placing and collection of livingwood and livingrock.
+
+Area requirements:
+3x4x2
+/ - Empty
+I - Input Chest
+O - Output Chest
+M - Material
+D - Daisy
+
+I / O
+M M M
+M D M
+M M M
+
+Usage:
+Ensure the Turtle is properly initialized (name, fuel, etc)
+Clear out the appropriate space
+Place Turtle above Pure Daisy facing towards the chests (North)
+Run the program
+--]]
+
 function placeHarvest()
 	turtle.forward()
 	turtle.placeDown()
@@ -84,4 +107,3 @@ turtle.forward()
 turtle.turnRight()
 turtle.forward()
 turtle.turnRight()
-
